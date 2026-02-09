@@ -1,0 +1,144 @@
+/*Alyssa Portofee
+February 8, 2026
+CSS stylesheet to format client mocktail website.
+*/
+
+
+/*Body, heading and paragraph formatting */
+body{
+    background-color:#808960;
+}
+
+h1{
+    text-align: center;
+    color: #f3edb4;
+    font-family:serif;
+    font-weight: 500;
+    font-style: bold;
+    
+}
+
+p{
+    background-color: #808960;
+    color: #141f07;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    
+}
+
+
+/*Header element div formatting */
+#header_elements{
+
+    background-color: #141f07;
+    text-align: center;
+    color:white;
+    padding-top:2%;
+    padding-bottom:2%;
+
+}
+
+/*Content div formatting*/
+#content{
+    width:fit-content;
+    padding-right:4%;
+
+
+}
+
+/*Link formatting*/
+a {
+    color:white;
+    padding:7%;
+    margin-top: 2%;
+}
+
+a:hover {
+    color:#808960;
+    padding:7%;
+    margin-top: 2%;
+}
+
+a:active {
+    color:#f3edb4;
+    padding:7%;
+    margin-top: 2%;
+}
+
+/*Logo and main image formatting*/
+#logo{
+    filter:brightness(0) invert(1);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    align-content: center;
+    max-width: 10%;
+    height:auto;
+}
+
+#hero{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height:auto;
+}
+
+/*Image formatting */
+
+#img1{
+    margin: auto;
+    float: left;
+    max-width: 30%;
+    height:auto;
+}
+
+#img2{
+    margin: auto;
+    float: left;
+    max-width: 30%;
+    height:auto;
+}
+#img3{
+    margin: auto;
+    float: left;
+    max-width: 30%;
+    height:auto;
+}
+
+/*
+AI used to generate media queries for resizing elements 
+for mobile devices. Documentation can be found 
+at: https://docs.google.com/document/d/1XxKpTlsPmxNx-ob5NT9ytilch5P8NENzqvrjivfOEvE/edit?tab=t.0#heading=h.qjurcv7z11ki
+*/
+/*Media query for resizing */
+@media (max-width: 768px){
+    /* Reduce padding on paragraphs */
+    p {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* Reduce logo and hero image sizes */
+    #logo {
+        max-width: 25%;
+    }
+    
+    #hero {
+        max-width: 95%;
+    }
+
+    /* Stop floating images and stack them vertically */
+    #img1,
+    #img2,
+    #img3 {
+        float: none;
+        display: block;
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+
+}
+
